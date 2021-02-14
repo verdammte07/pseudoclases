@@ -1,0 +1,512 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 2%;
+	padding: 10px;
+	background-color: red;
+}
+
+h1{
+	text-align: center;
+	font-style: bold;
+}
+
+.row{
+	display: flex;
+	background-color: gray;
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+}
+
+.uno{
+	display: flex;
+	background-color: black;
+	height: 240px;
+	width: 20%;
+	border: 2px solid gray;
+	float: left;
+}
+
+.dos{
+	display: flex;
+	background-color: white;
+	height: 240px;
+	width: 20%;
+	border: 2px solid gray;
+	float: left;
+}
+
+a: active{
+	color: red;
+}
+
+div: select {
+  margin: 1px;
+  height: 5px;
+}
+
+p{
+	color: white;
+}
+
+.li1{
+	color: white;
+}
+
+input[type="radio"]:checked {
+  	box-shadow: 0 0 0 3px blue;
+}
+
+input:default {
+  box-shadow: 0 0 5px 1px green;
+}
+input:default + label {
+  color: red;
+}
+
+:dir(ltr) {
+  	background-color: red;
+}
+:dir(rtl) {
+  	background-color: red;
+}
+
+legend{
+	color: white;
+}
+.chingon{
+	color: white;
+}
+input[type="text"]:disabled {
+  background: #ccc;
+}
+
+.box {
+  background: red;
+  margin-top: 30px;
+  height: 150px;
+  width: 80px;
+  border: 2px solid black;
+  border-radius: 5%;
+}
+.box:empty {
+  background: lime;
+}
+
+.nombreedad{
+	color: white
+}
+input:enabled {
+  color: black;
+}
+input:disabled {
+  color: #aaa;
+}
+
+@page :first {
+	margin-left: 10%;
+	margin-top: 10%;
+}
+.fotos{
+	text-align: center;
+	color: black;
+  	page-break-after: always;
+}
+.button{
+	height: 20px;
+	width: 80px;
+	margin-top: 95px;
+}
+
+p:first-child {
+  color: red;
+}
+.Gbandas{
+	text-align: center;
+	color: white;
+	margin-top: 60px;
+}
+.lml{
+	text-align: center;
+}
+
+p:first-of-type {
+  color: red;
+  font-style: italic;
+}
+.bridear{
+	color: black;
+}
+
+#fullscreen:fullscreen{
+	background-color: pink;
+	border:1px solid red;
+	font-size: 10%;
+}
+#fullscreen:fullscreen > h1{
+  	color: red;
+}
+#fullscreen:fullscreen > p{
+	text-align: center;
+  	color: darkred;
+}
+#fullscreen:fullscreen > button{
+  	display: none;
+}
+.fullscreen{
+	color: lime;
+}
+
+.red{
+	background-color: red;
+	text-align: center;
+	margin-top: 35px;
+	float: left;
+	height: 150px;
+	width: 100px;
+	border-radius: 50%;
+}
+.purple{
+	background-color: blue;
+	text-align: center;
+	margin-top: 35px;
+	float: left;
+	height: 150px;
+	width: 100px;
+	border-radius: 50%;
+}
+.red-input:focus {
+	height: 50px;
+	width: 50px;
+	background: blue;
+	color: black;
+}
+.blue-input:focus {
+	height: 50px;
+	width: 50px;
+  	background: red;
+ 	color: black;
+}
+
+a {
+	text-align: center;
+	height: 100%;
+	width:100%;
+  	background-color: black;
+  	transition: background-color .1000s;
+}
+a:hover {
+  	background-color: Gray;
+}
+
+input:indeterminate + label {
+  	background: lime;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+.valor{
+	color: white;
+}
+input {
+  	border: 2px solid gray;
+}
+input:in-range {
+  	background-color: lime;
+}
+input:out-of-range {
+  	background-color: red;
+  	border: 2px solid gray;
+}
+input:in-range + label::after {
+  	content: ' Esta Chingon.';
+}
+input:out-of-range + label::after {
+  	content: 'Esta Jodido!';
+}
+
+input:invalid (barra1){
+  background-color: red;
+}
+form:invalid {
+  border: 5px solid black;
+}
+input:rege valid {
+  background-color: lime;
+}
+form:valid {
+  border: 5% solid black;
+} 
+input:required {
+  border-color: black;
+  border-width: 3px;
+}
+input:required:invalid {
+  border-color:;
+}
+
+.trat{
+	color: white;
+}
+:lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+:lang(fr) > q { quotes: '« ' ' »'; }
+:lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
+
+.caja18{
+	color: black;
+}
+p:last-child {
+  	color: lime;
+  	padding: 2px;
+}
+
+.ladybaby{
+	text-align: center;
+	color: white;
+}
+p:last-of-type {
+	text-align: center;
+  	color: red;
+  	font-style: bold;
+}
+
+@page :left {
+  	margin: 2in 3in;
+} 
+
+.caja21{
+	color: white;
+}
+a:link {
+  	background-color: blue;
+  	color: black;
+}
+
+.yui {
+  	text-shadow: 2px 2px 3px green;
+}
+/* elementos <p> que no están en la clase `.fancy` */
+p:not(.yui) {
+  	color: red;
+}
+/* Elementos que no son elementos <p> */ 
+body :not(p) {
+  	text-decoration: underline;
+}
+/* Elementos que no son elementos <div> o <span> */
+body :not(div):not(span) {
+  	font-weight: bold;
+}
+/* Elementos que no son `.crazy` o `.fancy` */
+/* Tenga en cuenta que esta sintaxis aún no está bien soportada. */
+body :not(.crazy, .fancy) {
+ 	font-family: sans-serif;
+}
+
+.lady{
+	color: white
+}
+span, div em {
+ 	padding: 5px;
+ 	border: 1px solid green;
+ 	display: inline-block;
+	margin-bottom: 4px;
+}
+	.first span:nth-child(2n+1),
+	.second span:nth-child(2n+1),
+	.third span:nth-of-type(2n+1) {
+ 	background-color: lime;
+}
+
+table {
+	text-align: center;
+  	border: 1px solid red;
+}
+/* Selecciona los últimos tres elementos */
+tr:nth-last-child(-n+3) {
+  	background-color: lime;
+}
+/* Toma todos los elementos a partir del penúltimo elemento */
+tr:nth-last-child(n+2) {
+  	color: red;
+}
+/* Seleccione solo el penúltimo elemento */
+tr:nth-last-child(2) {
+  	font-weight: 800px;
+}
+span:nth-last-of-type(2) {
+  	background-color: lime;
+}
+
+.caja26{
+	text-align: center;
+}
+/* Párrafos impares */
+p:nth-of-type(2n+1) {
+  	color: red;
+}
+/* Párrafos pares */
+p:nth-of-type(2n) {
+  	color: blue;
+}
+/* Primer párrafo */
+p:nth-of-type(1) {
+  	font-weight: bold;
+}
+
+.caja27{
+	margin-top: 20px;
+	text-align: center;
+	color: white;
+}
+main :only-child {
+  color: red;
+}
+
+main :only-of-type {
+  color: red;
+}
+
+.lema{
+	color: red;
+}
+:optional{
+	color: white;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+input {
+  border: 1px solid black;
+}
+input:in-range {
+  background-color: lime;
+}
+input:out-of-range {
+  background-color: red;
+  border: 2px solid gray;
+}
+input:in-range + label::after {
+  content: 'bien.';
+}
+input:out-of-range + label::after {
+  content: '¡fuera de rango!';
+}
+
+input { min-width: 5em; }
+input:-moz-read-only { background: lime; }
+input:read-only { background: lime; }
+p:-moz-read-only { background: ; }
+p:read-only { background: ; }
+p[contenteditable="true"] { color: blue; }
+
+.requi{
+	color: white;
+}
+input:required {
+  border: 1px dashed red;
+}
+
+@page :right {
+  margin: 2in 3in;
+} 
+
+.caja35{
+	color: white;
+}
+:root {
+  --main-color: hotpink;
+  --pane-padding: 5px 42px;
+}
+
+.caja37{
+	color: white;
+}
+p:target {
+  	background-color: gray;
+}
+/* Agrega un pseudo-elemento dentro del elemento de destino */
+p:target::before {
+	text-align: left;
+  	font: 70% sans-serif;
+  	content: "►";
+  	color: lime;
+}
+/* Estilo de elementos en cursiva dentro del elemento de destino */
+p:target i {
+  	color: red;
+}
+
+/* Selecciona cualquier <input> válido */
+input:valid {
+  background-color: all;
+}
+
+a {
+  /* Especifique los valores predeterminados no transparentes a ciertas propiedades,
+     lo que les permite ser diseñado con el estado :visited */
+  background-color: ;
+  border: 1px solid white;
+}
+a:visited {
+  background-color: ;
+  border-color:;
+  color: ;
+}
+
+.caja40{
+	color: red;
+	text-align: center;
+}
+
+
+
+/*pseudo elementos*/
+.exciting-text::after {
+  	content: " <- DAS FEENREICH ->"; 
+  	color: lime;
+}
+.boring-text::after {
+  	content: " <- BORING";
+  	color: white;
+}
+
+
+q::before { 
+  	content: "«";
+  	color: blue;
+}
+q::after { 
+  	content: "»";
+  	color: red;
+}
+
+p::first-letter {
+ 	color: red;
+  	font-size: 150%;
+}
+
+::first-line {
+  	color: all;
+  	text-transform: bold;
+
+  /* ADVERTENCIA: NO USES ESTOS*/
+  /* Muchas propiedades son inválidas en pseudoelementos ::first-line */
+  	margin-left: 10px;
+  	text-indent: 100px;
+}
+.line{
+	color: white;
+}
+
+ul:li::marker {
+  color: red;
+}

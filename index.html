@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<title>Pseudo Clases</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+
+<body>
+	
+	<h1>Edwin David Cifuentes</h1>
+	<div class="row">
+		<div class="col-md-12">
+			<!-- :active -->
+			<div class="col-md-12 uno">
+				<a href="https://www.youtube.com/" target="blank"><h1>Youtube</h1></a>
+			</div>
+
+			<!-- :checked -->
+			<div class="col-md-12 dos">
+				 <ul>
+					<li>
+						<label>
+							<input type="radio" name="pasatiempos" value="Escuchar 	Musica">Escuchar Musica
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="pasatiempo" value="Dibujar">Dibujar
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="pasatiempo" value="Dormir">Dormir
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="pasatiempo" value="Ver Series">Ver Series
+						</label>
+					</li>
+					<li>
+						<label>
+							<input type="radio" name="pasatiempo" value="Ninguna">Ninguna
+						</label>
+					</li>
+				</ul>
+			</div>
+
+			<!-- :default -->
+			<div class="col-md-12 uno">
+				<p>Musica</p>
+				<ul>
+					<li class="li1">
+						<input type="radio" name="genero" id="Rock" checked>
+						<label for="Rock">Rock</label>
+					</li>
+					<li class="li1">
+						<input type="radio" name="genero" id="Pop">
+						<label for="Pop">Pop</label>
+					</li>
+					<li class="li1">
+						<input type="radio" name="genero" id="Metal">
+						<label for="Metal">Metal</label>
+					</li>
+					<li class="li1">
+						<input type="radio" name="genero" id="Rap">
+						<label for="Rap">Rap</label>
+					</li>
+					<li class="li1">
+						<input type="radio" name="genero" id="Electronica">
+						<label for="Electronica">Electronica</label>
+					</li>
+				</ul>
+			</div>
+
+			<!-- :dir() -->
+			<div class="col-md-12 dos">
+				<div dir="rtl">
+				  <span>Verdammtes</span>
+				  <div dir="ltr">Verdammtes
+				  <div dir="auto">No me funciona</div>
+				  </div>
+				</div>
+			</div>
+
+			<!-- :disable -->
+			<div class="col-md-12 uno">
+				<form action="#">
+				<fieldset id="shipping">
+					<legend>Artista Favorito</legend>
+					<input type="text" placeholder="Nombre">
+					<input type="text" placeholder="Album">
+					<input type="text" placeholder="Cancion">
+				</fieldset>
+				<fieldset id="billing">
+				    <legend>Artista Favorito</legend>
+				    <label for="billing_is_shipping eschingon" class="chingon">¿Es Chingon?</label>
+				    <input type="checkbox" id="billing-checkbox" checked>
+				    <br>
+				    <input type="text" placeholder="Nombre" disabled>
+				    <input type="text" placeholder="Album" disabled>
+				    <input type="text" placeholder="Cancion" disabled>
+				</fieldset>
+				</form>
+			</div>
+
+			<!-- :empy -->
+			<div class="col-md-12 dos">
+				<div class="box"></div>
+					<div class="box">
+					</div>
+					<div class="box"></div>
+			</div>
+
+			<!-- :enabled -->
+			<div class="col-md-12 uno">
+				<form action="url_of_form">
+				  <label for="FirstField"  class="nombreedad">Nombre (habilitado):</label>
+				  <input type="text" id="FirstField" value="Nombre"><br>
+				  <label for="FirstField"  class="nombreedad">Edad (habilitado):</label>
+				  <input type="text" id="FirstField" value="Edad"><br>
+				  <label for="FirstField"  class="nombreedad">Correo (habilitado):</label>
+				  <input type="text" id="FirstField" value="Coreo"><br>
+				  <label for="SecondField" class="nombreedad">Numero de Targeta (deshabilitado):</label>
+				  <input type="text" id="SecondField" value="#" disabled="disabled"><br>
+				  <input type="button" value="Enviar">
+				</form>
+			</div>
+
+			<!-- :first -->
+			<div class="col-md-12 dos">
+				<ul>
+					<li>
+						<h4 class="fotos">Yui Itsuki</h4>
+					</li>
+					<li>
+						<h4 class="fotos">Rie Kaneko</h4>
+					</li>
+					<li>
+						<h4 class="fotos">Rei Kuromiya</h4>
+					</li>
+					<li>
+						<h4 class="fotos">Fuki Commune</h4>
+					</li>
+
+				</ul>
+					<button class="button">Imprimir!</button>
+			</div>
+
+			<!-- :first-child -->
+			<div class="col-md-12 uno">
+				<div>
+				  <p>¡Yousei Teikoku!</p>
+				  <p>Unlucky Morpheus</p>
+				  <p>Passcode</p>
+				  <p>Garnidelia</p>
+				</div>
+				<div>
+				  <h2 class="Gbandas">Grandes Bandas</h2>
+				  <p class="lml">lml</p>
+				</div>
+			</div>
+
+			<!-- :first-of-type -->
+			<div class="col-md-12 dos">
+				<h2>Mas Rock</h2>
+				<ul>
+					<li>
+						<p>Aldios</p>
+						<p class="bridear">Bridear</p>
+						<p class="bridear">Brats</p>
+						<p class="bridear">DollBox</p>
+						<p class="bridear">ZOC</p>
+					</li>
+				</ul>
+			</div>
+
+			<!-- :fullscreen -->
+			<div class="col-md-12 uno">
+				<div id="fullscreen">
+				  <h1 class="fullscreen">Fullscreen</h1>
+				  <p>YAKATA MAWARI
+				  	<br><br>
+				  Escrita e Interpretada por DENKARE</p>
+				  <button id="fullscreen-button">Entrar en pantalla completa</button>
+				</div>
+			</div>
+
+			<!-- :focus -->
+			<div class="col-md-12 dos">
+				<input class="red-input red" value="Pastilla Roja"><br>
+				<input class="blue-input purple" value="Pastilla Azul">
+			</div>
+
+			<!-- :hover -->
+			<div class="col-md-12 uno">
+				<a href="#" class="colores"><h1>Verdammte</h1></a>
+			</div>
+
+			<!-- indeterminate -->
+			<div class="col-md-12 dos">
+				<ul><h1>Mas Bandas</h1>
+					<li>
+						<div>
+						  <input type="checkbox" id="checkbox">
+						  <label for="checkbox">Debler</label>
+						</div>
+						<li>
+							<div>
+							  <input type="radio" id="radio">
+							  <label for="radio">Green A</label>
+							</div>
+						</li>
+						
+					</li>
+				</ul>
+				
+			</div>
+
+			<!-- :in-range -->
+			<div class="col-md-12 uno">
+				<form action="" id="form1">
+				  <ul class="valor">Solo se permitiran los valores inferiores a 100
+				    <li>
+				      <input id="value1" name="value1" type="number" placeholder="1 a 100" min="1" max="100" value="101">
+				      <label for="value1" class="valor">Tu Numero</label>
+				    </li>
+				  </ul>
+				</form>
+			</div>
+
+			<!-- :invalid -->
+			<div class="col-md-12 dos">
+				<form>
+				  <label for="url_input" class="rege">Ingresa una URL:</label>
+				  <input type="url" id="url_input" />
+				  <br />
+				  <br />
+				  <label for="email_input">Introduzca una dirección de correo electrónico:</label>
+				  <input type="email" id="email_input" required/>
+				</form>
+			</div>
+
+			<!-- :lang() -->
+			<div class="col-md-12 uno">
+				<ul>
+					<li>
+						<div lang="en" class="trat"><q>Inglés, cita <q>anidada</q> adentro.</q></div>
+					</li>
+					<li>
+						<div lang="fr" class="trat"><q>Francés,cita <q>anidada</q> adentro.</q></div>
+					</li>
+					<li>
+						<div lang="de" class="trat"><q>Aleman ,cita <q>anidada</q> adentro.</q></div>
+						<br>
+						<q class="trat">Esta clase no la entendi</q>
+					</li>
+				</ul>
+			</div>
+
+			<!-- :last-child -->
+			<div class="col-md-12 dos">
+				<div>
+				  <p class="caja18">Denkare</p>
+				  <br><br>
+				  <p>Yui Itsuki</p>
+				</div>
+				<div>
+				  <p  class="caja18">Es la misma cantante de Yousei Teikoku</p><br><br>
+				  <h1  class="caja18">Yousei Teikoku</h1>
+				</div>
+			</div>
+
+			<!-- :last-of-type -->
+			<div class="col-md-12 uno">
+				<ul>
+					<h2 class="ladybaby">LadyBaby</h2>
+					<li>
+						<p>Nana Ikeda</p>
+					</li>
+					<li>
+						<p>Emily Arima</p>
+					</li>
+					<li>
+						<p>Fuka Karasawa</p>
+					</li>
+					<li>
+						<p>Rie Kaneko</p>
+					</li>
+				</ul>
+			</div>
+
+			<!-- :left -->
+			<div class="col-md-12 dos">
+				<h1>Noce exactamente lo que hace esta clase</h1>
+			</div>
+
+			<!-- :link -->
+			<div class="col-md-12 uno">
+				<a href="#ordinary-target">Este es un enlace ordinario.</a><br>
+				<a class="caja21">Ya has visitado Youtube.</a><br>
+				<a class="caja21">Enlace de marcador de posición (no se personalizará)</a>
+			</div>
+
+			<!-- :not() -->
+			<div class="col-md-12 dos">
+				<ul>
+					<li>
+						<p>Soy Yui Itsuki</p>
+					</li>
+					<li>
+						<p class="yui">Soy una Emperatriz</p>
+					</li>
+					<li>
+						<div>NO soy solo otra cantante.</div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- :nth-child() -->
+			<div class="col-md-12 uno">
+				<ul>
+				<p>YUI_RIE_REI_RUKA son seleccionadas</p>
+					<li>
+						<div class="first">
+						  <span>YUI</span>
+						  <span class="lady">EMILY</span>
+						  <span>RIE</span>
+						  <span class="lady">FUKA</span>
+						  <span>REI</span>
+						  <span class="lady">NANA</span>
+						  <span>RUKA</span>
+						</div>
+					</li>
+				</ul>
+				
+				
+			</div>
+
+			<!-- :nth-last-child() -->
+			<div class="col-md-12 dos">
+				<table>
+				  <tbody>
+				    <tr>
+				      <td>Yousei Teikoku</td>
+				    </tr>
+				    <tr>
+				      <td>Denkare</td>
+				    </tr>
+				    <tr>
+				      <td>LadyBaby</td>
+				    </tr>
+				    <tr>
+				      <td>Unlucky Morpheus</td>
+				    </tr>
+				    <tr>
+				      <td>Passcode</td>
+				    </tr>
+				    <tr>
+				      <td>Scandal</td>
+				    </tr>
+				    <tr>
+				      <td>Garnidelia</td>
+				    </tr>
+				    <tr>
+				      <td>Brats</td>
+				    </tr>
+				     <tr>
+				      <td>DollBoxx</td>
+				    </tr>
+				     <tr>
+				      <td>Trident</td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+
+			<!-- :nth-last-of-type() -->
+			<div class="col-md-12 uno">
+				<div>
+				  <span class="lady">Bienvenido</span>
+				  <span  class="lady">Esto es mi Imperio</span>
+				  <em  class="lady">Y aqui el lema</em>
+				  <span>__¡DAS FEENREICH!__</span>
+				  <strike  class="lady">Esta tachado, pero Gritalo</strike>
+				  <span  class="lady">Para Ganar Esta Guerra</span>
+				</div>
+
+			</div>
+
+			<!-- :nth-of-type -->
+			<div class="col-md-12 dos">
+				<div class="caja26">
+				  <div>Escucha estas Canciones</div>
+				  <p>Patriot Anthem</p>
+				  <p>Rebellion Anthem</p>
+				  <div>Luego continua con estas</div>
+				  <p>Kikai</p>
+				  <p>Astral Dogma</p>
+				</div>
+			</div>
+
+			<!-- :only-child -->
+			<div class="col-md-12 uno">
+				<main>
+				  <div class="caja27">
+				    <i>Soy Yui-Sama. La mejor emperatriz que veras</i>
+				  </div>
+				  <div>
+				    <i class="caja27">Tengo un gran reinado</i><br>
+				    <b class="caja27">Al cual puedes pertenecer</b><br>
+				    <span class="caja27">Y lo unico que debes hacer es Gritar<span>!DAS FEENREICH¡</span></span>
+				  </div>
+				</main>
+			</div>
+
+			<!-- :only-of-type -->
+			<div class="col-md-12 dos">
+				<main>
+				  <div>Soy la mejor cantante</div>
+				  <p>Soy la unica DIOSA en la nesecitas creer</p>
+				  <div>Gobernare</div>
+				  <div>Este mundo
+				    <i>Dañado por el hombre y su hipocresia</i>
+				    <em>Me lebantare</em>
+				    <em>Y Dominare</em>
+				  </div>
+				</main>
+			</div>
+
+			<!-- :optional -->
+			<div class="col-md-12 uno">
+				<div class="col-md-6">
+			      <h1 class="lema">DAS FEENREICH</h1>
+			    </div>
+			</div>
+
+			<!-- :out-of-range -->
+			<div class="col-md-12 dos">
+				<form action="" id="form1">
+				  <ul>Solo se permitiran los valores inferiores a 100
+				    <li>
+				      <input id="value1" name="value1" type="number" placeholder="1 a 100" min="1" max="100" value="101">
+				      <label for="value1">Tu valor esta </label>
+				    </li>
+				  </ul>
+				</form>
+			</div>
+
+			<!-- :read-only -->
+			<div class="col-md-12 uno">
+				<ul>
+					<input type="text" value=" Pon lo que quieras.">
+					<input type="text" value="Solo lectura." readonly>
+					<p>XDXDXDXDXDX</p>
+					<p contenteditable="true">Puedes Editarlo</p>
+				</ul>	
+			</div>
+
+			<!-- :read-write -->
+			<div class="col-md-12 dos">
+				<ul>
+					<input type="text" value="Para escribir">
+					<input type="text" value="Solo se lee" readonly>
+					<p>JEJEJEJEJEJEJEJE</p>
+					<p contenteditable="true">Para editar</p>
+				</ul>
+				
+			</div>
+
+			<!-- :required -->
+			<div class="col-md-12 uno">
+				<h1 class="requi">Required</h1>
+			</div>
+
+			<!-- :right -->
+			<div class="col-md-12 dos">
+				<h1>Right</h1>
+				<p>No creo que entienda lo que hace, o tal vez no se pudo ver el cambio</p>
+			</div>
+
+			<!-- :root -->
+			<div class="col-md-12 uno">
+				<ul>
+					<h1 class="caja35">Root</h1>
+					<h3 class="caja35">Tampoco entendi</h3>
+				</ul>
+				
+			</div>
+
+			<!-- :scope -->
+			<div class="col-md-12 dos">
+				<ul>
+					<h1>Scope</h1>
+					<p id="para">
+					  Bueno este tampoco entendi el funcionamiento. Joder...
+					</p>
+					<p id="output"></p>
+				</ul>
+				</div>
+
+			<!-- :target -->
+			<div class="col-md-12 uno">
+				<ol>
+					<h4 class="caja37">Enlaces</h4>
+					 <li><a href="#p1">Texto 1
+					 <li><a href="#p2">Texto 2</a></li>
+					 <li><a href="#nowhere">No enlazado</a></li>	
+				</ol>
+				<ol>
+					<h4 class="caja37">Respuestas</h4>
+					<p id="p1">Aqui<i>NO</i>ahi nada</p>
+					<p id="p2">Otro<i>para</i>, nada. !Genial¡</p>
+				</ol>
+				
+			</div>
+
+			<!-- :valid -->
+			<div class="col-md-12 dos">
+				<ul>
+					<h1>Valid</h1>
+					<p>Mas o menos Entendi su funcion</p>
+				</ul>
+			</div>
+
+			<!-- :visited -->
+			<div class="col-md-12 uno">
+				<a href="#test-visited-link">¿Ya has acabado de ver todos los recuadros?</a><br>
+				<a href="">Genial, Espero allas comprendido</a>
+
+			</div>
+
+			<div class="col-md-12 dos">
+				<ul class="caja40">
+					<h1>Comentario</h1>
+					Pues bueno, los primeros los comprendi, pero llegando a estas ultimas pseudoclases no me quedaron claras.
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- :after -->
+	<div class="row">
+		<h1>Pseudo-Elementos</h1>
+		<div class="col-md-12">
+			<p class="boring-text">Elemento After</p>
+			<p>Este elemento sirve para agregar texto al final de un parrafo, se tal manera que no se puede seleccionar</p>
+			<p class="exciting-text">prueva con el la siguiente frase=</p>
+		</div>
+
+		<!-- :before -->
+		<div class="col-md-12">
+			<q>La clase Before</q> agrega contenido estetico a un elemento<q>en este caso las flechas</q>.
+		</div>
+
+		<!-- :first-letter -->
+		<div class="col-md-12">
+			<h1>YOUSEI TEIKOKU</h1>
+			<h3>The Age of Villans - Album</h3>
+			<p>A Treatise of Villainy</p>
+			<p>Autoscopy</p>
+			<p>獄ノ幻</p>
+			<p>IRON ROSE</p>
+			<p>Phantom terror</p>
+			<p>濫觴永遠</p>
+			<p>Eclipsed</p>
+			<p>Hell in glass</p>
+			<p> 絶</p>
+			<p>Paradiso≒Inferno</p>
+			<p>或る追憶、膨張宇宙に於ける深海乃ち萃点</p>
+			<p>葬送フリヰジアン</p>
+		</div>
+
+		<!--first-line -->
+		<div class="col-md-12">
+			<h1>First-line</h1>
+			<p class="line">Los estilos sólo se aplicarán en la primera línea de este párrafo.
+			Posteriormente, todo el texto tendrá el estilo normal.
+			¿Ves?</p>
+
+			<span class="line">La primera línea de este elemento no recibe ningún estilo 
+			especial, porque no es un elemento de bloque.</span>
+		</div>
+
+		<!-- :marker -->
+		<div class="col-md-12">
+			<ul>
+			  <li>MUSICA</li>
+			  <li>DIBUJO</li>
+			  <li>CODIGO</li>
+			</ul>
+		</div>
+		
+	</div>
+
+
+</body>
+</html>
